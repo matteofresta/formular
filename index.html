@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="script.js" defer></script>
+  <link rel="stylesheet" href="style.css">
+  <title>Formular Validation</title>
+</head>
+<body>
+
+<div class="form-container">
+  <h1>Formular Validation</h1>
+  <form class="col s12">
+    <div class="input-container">
+      <label for="FullName">Name</label>
+      <input placeholder="Max Mustermann" id="FullName" type="text" required />
+    </div>
+    <div class="input-container">
+      <label for="Phone">Handynummer</label>
+      <input placeholder="0179 12345678" id="Phone" type="text" required />
+    </div>
+
+    <div class="input-container">
+      <label for="zipCode">Postleitzahl</label>
+      <input placeholder="12345" id="zipCode" type="text" required />
+    </div>
+
+    <div class="input-container">
+      <label for="Password">Password</label>
+      <input placeholder="123456789" id="Password" type="password" required />
+    </div>
+
+    <div class="input-container">
+      <label for="Email">Email</label>
+      <input placeholder="maxmustermann@gmail.com" id="Email" type="email" />
+    </div>
+
+    <input type="submit" value="Submit" class="btn red" />
+  </form>
+</div>
+
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+</body>
+</html>
